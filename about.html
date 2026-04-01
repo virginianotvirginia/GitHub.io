@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About | Vocalstrain</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap');
+
+:root{
+  --bg:#050505;
+  --text:#f5f1e8;
+  --muted:#c7c0b4;
+  --accent:#d6c1a1;
+  --line:#1a1a1a;
+  --max:1100px;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:'Inter', Arial, sans-serif;
+  line-height:1.7;
+}
+
+.container{
+  max-width:var(--max);
+  margin:auto;
+  padding:20px;
+}
+
+a{color:var(--accent);text-decoration:none}
+a:hover{opacity:.8}
+
+header{
+  border-bottom:1px solid var(--line);
+  position:sticky;
+  top:0;
+  background:#050505;
+  z-index:10;
+}
+
+.header-inner{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.logo{
+  font-family:'Playfair Display', serif;
+  font-size:32px;
+  margin:10px 0;
+}
+
+nav a{
+  margin-right:20px;
+  color:var(--muted);
+}
+nav a:hover{color:var(--text)}
+nav a:last-child{margin-right:0}
+
+section{
+  padding:90px 0;
+  border-bottom:1px solid var(--line);
+}
+
+h1,h2,h3{
+  font-family:'Playfair Display', serif;
+  letter-spacing:1px;
+  margin-top:0;
+}
+
+h1{
+  font-size:56px;
+  margin-bottom:15px;
+}
+
+h2{
+  font-size:32px;
+  margin-bottom:16px;
+}
+
+h3{
+  font-size:22px;
+}
+
+p{
+  color:var(--muted);
+  max-width:760px;
+}
+
+.hero{
+  min-height:78vh;
+  display:flex;
+  align-items:center;
+  background:linear-gradient(180deg, rgba(0,0,0,0.62), rgba(0,0,0,0.9)), url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1600&auto=format&fit=crop');
+  background-size:cover;
+  background-position:center;
+}
+
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:var(--accent);
+  font-size:12px;
+  margin-bottom:18px;
+}
+
+.btn{
+  display:inline-block;
+  padding:12px 26px;
+  border:1px solid var(--accent);
+  margin-top:20px;
+  transition:.3s;
+}
+.btn:hover{
+  background:var(--accent);
+  color:#000;
+}
+
+.grid{
+  display:grid;
+  gap:25px;
+}
+
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.grid-4{grid-template-columns:repeat(4,1fr)}
+
+.card{
+  border:1px solid var(--line);
+  padding:28px;
+  transition:.3s;
+  background:rgba(255,255,255,0.01);
+}
+.card:hover{border-color:var(--accent)}
+
+.quote{
+  font-family:'Playfair Display', serif;
+  font-size:34px;
+  line-height:1.35;
+  color:var(--text);
+  max-width:860px;
+}
+
+.center{text-align:center;margin:auto}
+
+footer{
+  border-top:1px solid var(--line);
+  padding:50px 0;
+  text-align:center;
+  color:#777;
+}
+
+@media(max-width:900px){
+  .grid-2,.grid-4{grid-template-columns:1fr}
+  h1{font-size:40px}
+  h2{font-size:28px}
+  .quote{font-size:26px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container header-inner">
+    <div class="logo">Vocalstrain</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="#story">Story</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#belief">Belief</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">About the Ecosystem</div>
+    <h1>Built from experience, not theory.</h1>
+    <p>
+      Vocalstrain was not created as a polished concept first. It began as a real need to rebuild, reconnect, and create structure around a voice that refused to disappear.
+    </p>
+    <a class="btn" href="#story">Read the story</a>
+  </div>
+</section>
+
+<section id="story">
+  <div class="container">
+    <div class="eyebrow">The beginning</div>
+    <h2>This didn’t start as a business.</h2>
+    <p>
+      It started as a response to disconnection. After years of creating, performing, writing, and navigating the complexities of creative life, what remained clear was this: talent alone is not enough to sustain a voice. Not without structure. Not without ownership. Not without a place for the work to live and grow intentionally.
+    </p>
+    <p>
+      What followed was not a reinvention for the sake of branding. It was a reconstruction of identity, direction, and infrastructure. A way to hold creativity with more clarity, more depth, and more purpose.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid grid-2">
+    <div class="card">
+      <div class="eyebrow">The problem</div>
+      <h3>The issue was never a lack of talent.</h3>
+      <p>
+        Creators are constantly told to keep producing, keep posting, and keep showing up. But very few are given a system that connects identity, content, audience, and income in a meaningful way.
+      </p>
+    </div>
+    <div class="card">
+      <div class="eyebrow">The shift</div>
+      <h3>So a system had to be built.</h3>
+      <p>
+        Vocalstrain became the center of that system: a place where story creates clarity, content builds trust, platforms create ownership, and creative work can finally move with intention.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="ecosystem">
+  <div class="container">
+    <div class="eyebrow">One ecosystem</div>
+    <h2>Four distinct expressions. One connected vision.</h2>
+    <div class="grid grid-4">
+      <div class="card">
+        <h3>Vocalstrain</h3>
+        <p>The mothership. A platform for deeper storytelling, restoration, membership, and long-term creative ownership.</p>
+      </div>
+      <div class="card">
+        <h3>virginia, not virginia</h3>
+        <p>The voice. A personal identity rooted in truth, transformation, artistic memory, and return.</p>
+      </div>
+      <div class="card">
+        <h3>Hush Underground</h3>
+        <p>The lens. Documentary-style content and media that allow the process to be seen while it is still unfolding.</p>
+      </div>
+      <div class="card">
+        <h3>AV Legacies</h3>
+        <p>The business arm. Strategy, storytelling, media, and monetization support shaped by lived creative experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container center">
+    <div class="eyebrow">Guiding line</div>
+    <p class="quote">Creativity deserves structure. Story deserves a home. Voice deserves a way back.</p>
+  </div>
+</section>
+
+<section id="belief">
+  <div class="container">
+    <div class="eyebrow">What this really is</div>
+    <h2>A living system for creative restoration.</h2>
+    <p>
+      This is not just a brand and not just a website. It is a living ecosystem designed to support artists, creators, and visionaries who are rebuilding something important. It holds space for process, not just polish. It values depth over noise. It makes room for voice, vulnerability, and evolution without asking creativity to become something smaller just to be marketable.
+    </p>
+    <p>
+      Everything here is built around alignment: identity with message, message with content, content with platform, platform with opportunity.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="container grid grid-2">
+    <div>
+      <div class="eyebrow">From me, directly</div>
+      <h2>I built what I needed to find.</h2>
+      <p>
+        This work is shaped by lived experience across music, writing, media, voice, performance, and rebuilding. It comes from knowing what it feels like to lose momentum, question direction, and still carry a voice that has more to say.
+      </p>
+      <p>
+        Vocalstrain is my answer to that experience. Not perfection. Not performance. Structure. Intention. Return.
+      </p>
+    </div>
+    <div class="card">
+      <div class="eyebrow">Who this is for</div>
+      <h3>If you are rebuilding, you belong here.</h3>
+      <p>
+        This space is for the artist returning after distance. For the creator trying to organize the pieces. For the visionary who knows there is still something left to build and say.
+      </p>
+      <a class="btn" href="index.html">Back to home</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="eyebrow">Contact</div>
+    <h2>Let’s connect.</h2>
+    <p>Email: <a href="mailto:VirginiaRadio@icloud.com">VirginiaRadio@icloud.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/virginianotvirginia" target="_blank" rel="noopener">@virginianotvirginia</a></p>
+    <p>YouTube: <a href="https://youtube.com/hushunderground" target="_blank" rel="noopener">Hush Underground</a></p>
+  </div>
+</section>
+
+<footer>
+  <p>© Vocalstrain</p>
+</footer>
+
+</body>
+</html>
