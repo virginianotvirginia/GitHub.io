@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vocalstrain</title>
+  <style>
+    :root{
+      --bg:#050505;--text:#f5f1e8;--muted:#c7c0b4;--accent:#d6c1a1;--line:#1a1a1a;
+      --max:1100px
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:var(--text);font-family:Arial, sans-serif;line-height:1.6}
+    a{color:var(--accent);text-decoration:none}
+    .container{max-width:var(--max);margin:auto;padding:20px}
+
+    header{border-bottom:1px solid var(--line)}
+    nav a{margin-right:15px;color:var(--muted)}
+    nav a:hover{color:var(--text)}
+
+    section{padding:80px 0;border-bottom:1px solid var(--line)}
+    h1,h2{font-family:"Courier New",monospace;letter-spacing:1px}
+    h1{font-size:48px;margin-bottom:10px}
+    h2{font-size:28px}
+    p{color:var(--muted)}
+
+    .hero{min-height:80vh;display:flex;align-items:center}
+
+    .btn{display:inline-block;padding:12px 22px;border:1px solid var(--accent);margin-top:20px}
+    .btn:hover{background:var(--accent);color:#000}
+
+    .grid{display:grid;gap:20px}
+    .grid-4{grid-template-columns:repeat(4,1fr)}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .card{border:1px solid var(--line);padding:20px}
+
+    .center{text-align:center}
+
+    footer{padding:40px 0;text-align:center;color:#888}
+
+    @media(max-width:900px){
+      .grid-4,.grid-3{grid-template-columns:1fr}
+      h1{font-size:34px}
+    }
+  </style>
+</head>
+<body>
+
+<header class="container">
+  <h2>Vocalstrain</h2>
+  <nav>
+    <a href="#ecosystem">Ecosystem</a>
+    <a href="#how">How It Works</a>
+    <a href="#membership">Membership</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section class="hero container">
+  <div>
+    <h1>Turn strain into strategy.</h1>
+    <p>A creative ecosystem where story, voice, and content become structure, ownership, and sustainable growth.</p>
+    <a class="btn" href="#ecosystem">Explore the Ecosystem</a>
+  </div>
+</section>
+
+<section class="container">
+  <h2>Not just a brand. A full creative infrastructure.</h2>
+  <p>Vocalstrain is the central platform behind an interconnected ecosystem of storytelling, identity, media, and strategy. Built for creators who are rebuilding, returning, or redefining their voice.</p>
+</section>
+
+<section id="ecosystem" class="container">
+  <h2>One ecosystem. Four expressions.</h2>
+  <div class="grid grid-4">
+    <div class="card">
+      <h3>Vocalstrain</h3>
+      <p>The platform for deeper storytelling, membership, and creative rebuilding.</p>
+    </div>
+    <div class="card">
+      <h3>virginia, not virginia</h3>
+      <p>The voice and identity driving the entire ecosystem.</p>
+    </div>
+    <div class="card">
+      <h3>Hush Underground</h3>
+      <p>The cinematic content engine documenting transformation in real time.</p>
+    </div>
+    <div class="card">
+      <h3>AV Legacies</h3>
+      <p>The business engine focused on strategy, branding, and monetization.</p>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="container">
+  <h2>From story to structure.</h2>
+  <p class="center">Identity → Content → Trust → Platform → Revenue</p>
+</section>
+
+<section class="container center">
+  <h2>From new to knew; to now you’ll know.</h2>
+  <p>This space exists for creators who are rebuilding, reclaiming, and redefining their voice.</p>
+</section>
+
+<section class="container">
+  <h2>Three ways to enter.</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>For Creators</h3>
+      <p>Rebuild your voice and rediscover your direction.</p>
+    </div>
+    <div class="card">
+      <h3>For Clients</h3>
+      <p>Develop your brand and create meaningful, aligned content.</p>
+    </div>
+    <div class="card">
+      <h3>For Collaborators</h3>
+      <p>Connect and grow through shared creative opportunities.</p>
+    </div>
+  </div>
+</section>
+
+<section class="container">
+  <h2>This is being built in real time.</h2>
+  <p>Through Hush Underground, this ecosystem is documented as it evolves—capturing transformation as it happens.</p>
+</section>
+
+<section id="membership" class="container">
+  <h2>Enter Vocalstrain</h2>
+  <p>Exclusive storytelling, deeper insight, and creative rebuilding tools.</p>
+  <a class="btn" href="mailto:VirginiaRadio@icloud.com?subject=Vocalstrain Membership">Join Membership</a>
+</section>
+
+<section id="projects" class="container">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card">Vocalstrain platform development</div>
+    <div class="card">Hush Underground content launch</div>
+    <div class="card">AV Legacies services</div>
+    <div class="card">365-day inspirational series</div>
+  </div>
+</section>
+
+<section id="contact" class="container">
+  <h2>Contact</h2>
+  <p>Email: <a href="mailto:VirginiaRadio@icloud.com">VirginiaRadio@icloud.com</a></p>
+  <p>Instagram: <a href="https://instagram.com/virginianotvirginia" target="_blank">@virginianotvirginia</a></p>
+  <p>YouTube: <a href="https://youtube.com/hushunderground" target="_blank">Hush Underground</a></p>
+</section>
+
+<section class="center container">
+  <h2>For the artist rebuilding.</h2>
+</section>
+
+<footer>
+  <p>© Vocalstrain</p>
+</footer>
+
+</body>
+</html>
