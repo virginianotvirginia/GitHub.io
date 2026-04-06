@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Services | Vocalstrain</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap');
+
+:root{
+  --bg:#050505;
+  --text:#f5f1e8;
+  --muted:#c7c0b4;
+  --accent:#d6c1a1;
+  --line:#1a1a1a;
+  --max:1100px;
+}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter',sans-serif;line-height:1.7}
+a{color:var(--accent);text-decoration:none}
+a:hover{opacity:.85}
+.container{max-width:var(--max);margin:auto;padding:20px}
+header{border-bottom:1px solid var(--line);position:sticky;top:0;background:#050505;z-index:10}
+nav a{margin-right:20px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+section{padding:90px 0;border-bottom:1px solid var(--line)}
+h1,h2,h3{font-family:'Playfair Display',serif;margin-top:0}
+h1{font-size:56px;margin-bottom:12px}
+h2{font-size:34px;margin-bottom:14px}
+h3{font-size:24px;margin-bottom:10px}
+p{color:var(--muted);max-width:760px}
+.hero{min-height:72vh;display:flex;align-items:center;background:linear-gradient(180deg, rgba(0,0,0,.58), rgba(0,0,0,.9)), url('https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?q=80&w=1600&auto=format&fit=crop');background-size:cover;background-position:center}
+.eyebrow{text-transform:uppercase;letter-spacing:2px;color:var(--accent);font-size:12px;margin-bottom:18px}
+.grid{display:grid;gap:28px}.grid-2{grid-template-columns:repeat(2,1fr)}
+.card{border:1px solid var(--line);padding:30px;background:rgba(255,255,255,0.01)}
+.card:hover{border-color:var(--accent)}
+.price{display:block;margin-top:16px;color:var(--text);font-family:'Playfair Display',serif;font-size:22px}
+.btn{display:inline-block;padding:12px 24px;border:1px solid var(--accent);margin-top:18px}
+.btn:hover{background:var(--accent);color:#000}
+.center{text-align:center;margin:auto}
+.list{margin:18px 0 0;padding-left:18px;color:var(--muted)}
+.list li{margin-bottom:10px}
+footer{border-top:1px solid var(--line);padding:50px 0;text-align:center;color:#777}
+@media(max-width:900px){.grid-2{grid-template-columns:1fr}h1{font-size:40px}h2{font-size:28px}}
+</style>
+</head>
+<body>
+
+<header class="container">
+  <h2>Vocalstrain</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="container">
+    <div class="eyebrow">Work with me</div>
+    <h1>Creative strategy with story at the center.</h1>
+    <p>I help artists, founders, and evolving brands turn scattered ideas into clearer messaging, stronger presence, and more intentional creative direction.</p>
+    <a class="btn" href="mailto:VirginiaRadio@icloud.com?subject=Services Inquiry">Start a Conversation</a>
+  </div>
+</section>
+
+<section class="container">
+  <div class="eyebrow">Monetization layer</div>
+  <h2>Three ways to work together.</h2>
+  <p>This site is not just a portfolio. It is a working ecosystem designed to convert story into opportunity through services, memberships, and future digital products.</p>
+</section>
+
+<section class="container">
+  <div class="grid grid-2">
+    <div class="card">
+      <div class="eyebrow">Service 01</div>
+      <h3>Brand Clarity Session</h3>
+      <p>A focused strategy session for creators or businesses who need sharper messaging, audience alignment, and a clearer sense of what their brand is actually saying.</p>
+      <ul class="list">
+        <li>Positioning review</li>
+        <li>Messaging clarity</li>
+        <li>Audience direction</li>
+        <li>Next-step recommendations</li>
+      </ul>
+      <span class="price">Starting at $150</span>
+      <a class="btn" href="mailto:VirginiaRadio@icloud.com?subject=Brand Clarity Session Inquiry">Book This</a>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Service 02</div>
+      <h3>Voice + Story Development</h3>
+      <p>For artists, speakers, writers, and founders who need help shaping a more resonant voice across bio copy, personal narrative, brand tone, or spoken content.</p>
+      <ul class="list">
+        <li>Brand voice refinement</li>
+        <li>Story framing</li>
+        <li>Bio or intro support</li>
+        <li>Creative positioning guidance</li>
+      </ul>
+      <span class="price">Starting at $250</span>
+      <a class="btn" href="mailto:VirginiaRadio@icloud.com?subject=Voice and Story Development Inquiry">Book This</a>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Service 03</div>
+      <h3>Content Direction Intensive</h3>
+      <p>A deeper service for clients building a site, channel, launch, or body of work who need cohesive direction across content, tone, and presentation.</p>
+      <ul class="list">
+        <li>Content ecosystem review</li>
+        <li>Offer alignment</li>
+        <li>Page or platform direction</li>
+        <li>Creative rollout suggestions</li>
+      </ul>
+      <span class="price">Starting at $400</span>
+      <a class="btn" href="mailto:VirginiaRadio@icloud.com?subject=Content Direction Intensive Inquiry">Book This</a>
+    </div>
+
+    <div class="card">
+      <div class="eyebrow">Service 04</div>
+      <h3>Custom Creative Consulting</h3>
+      <p>For projects that cross categories—voice, media, branding, storytelling, AI-assisted ideation, or strategic creative development.</p>
+      <ul class="list">
+        <li>Custom scope</li>
+        <li>Flexible support</li>
+        <li>Creative troubleshooting</li>
+        <li>Strategy + refinement</li>
+      </ul>
+      <span class="price">By quote</span>
+      <a class="btn" href="mailto:VirginiaRadio@icloud.com?subject=Custom Creative Consulting Inquiry">Inquire</a>
+    </div>
+  </div>
+</section>
+
+<section class="container grid grid-2">
+  <div>
+    <div class="eyebrow">Next revenue stream</div>
+    <h2>Membership is the deeper layer.</h2>
+    <p>Vocalstrain is also evolving into a private membership environment where deeper storytelling, memoir-based content, voice work, and creative rebuilding frameworks can live behind the public site.</p>
+    <a class="btn" href="mailto:VirginiaRadio@icloud.com?subject=Vocalstrain Membership Interest">Join Early Access</a>
+  </div>
+  <div class="card">
+    <div class="eyebrow">Future products</div>
+    <h3>Digital offers in development</h3>
+    <ul class="list">
+      <li>365-day inspirational series</li>
+      <li>Guided writing prompts</li>
+      <li>Voice and identity frameworks</li>
+      <li>Memoir and storytelling content</li>
+    </ul>
+  </div>
+</section>
+
+<section class="container center">
+  <div class="eyebrow">Who this is for</div>
+  <h2>Artists, founders, and brands that need more than content—they need coherence.</h2>
+  <p>If your voice is strong but your structure is scattered, this is where we begin.</p>
+  <a class="btn" href="mailto:VirginiaRadio@icloud.com?subject=Let’s Work Together">Let’s Work Together</a>
+</section>
+
+<footer>
+  <p>© Vocalstrain</p>
+</footer>
+
+</body>
+</html>
