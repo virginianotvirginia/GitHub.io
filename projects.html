@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Projects | Vocalstrain</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Inter:wght@300;400;500&display=swap');
+
+:root{
+  --bg:#050505;
+  --text:#f5f1e8;
+  --muted:#c7c0b4;
+  --accent:#d6c1a1;
+  --line:#1a1a1a;
+  --max:1100px;
+}
+
+body{margin:0;background:var(--bg);color:var(--text);font-family:'Inter', sans-serif}
+.container{max-width:var(--max);margin:auto;padding:20px}
+section{padding:90px 0;border-bottom:1px solid var(--line)}
+h1,h2,h3{font-family:'Playfair Display', serif}
+h1{font-size:56px}
+h2{font-size:32px}
+p{color:var(--muted);max-width:700px}
+
+.grid{display:grid;gap:30px}
+.grid-2{grid-template-columns:repeat(2,1fr)}
+.card{border:1px solid var(--line);padding:30px}
+.card:hover{border-color:var(--accent)}
+
+header{border-bottom:1px solid var(--line)}
+nav a{margin-right:20px;color:var(--muted)}
+nav a:hover{color:var(--text)}
+
+.btn{display:inline-block;padding:10px 20px;border:1px solid var(--accent);margin-top:15px}
+
+@media(max-width:900px){
+  .grid-2{grid-template-columns:1fr}
+  h1{font-size:38px}
+}
+</style>
+</head>
+
+<body>
+
+<header class="container">
+  <h2>Vocalstrain</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+  </nav>
+</header>
+
+<section class="container">
+  <h1>Projects in motion.</h1>
+  <p>This ecosystem is actively being built across storytelling, media, and strategic development.</p>
+</section>
+
+<section id="projects" class="container">
+  <div class="grid grid-2">
+
+    <div class="card">
+      <h3>Vocalstrain Platform</h3>
+      <p>Development of the central membership-based storytelling and creative restoration platform.</p>
+    </div>
+
+    <div class="card">
+      <h3>Hush Underground</h3>
+      <p>Cinematic content documenting the rebuilding process in real time.</p>
+    </div>
+
+    <div class="card">
+      <h3>AV Legacies</h3>
+      <p>Creative strategy and brand development services for artists and entrepreneurs.</p>
+    </div>
+
+    <div class="card">
+      <h3>365-Day Series</h3>
+      <p>Inspirational daily content designed for both physical and digital distribution.</p>
+    </div>
+
+    <div class="card">
+      <h3>Memoir Project</h3>
+      <p>A deeply personal narrative exploring voice, identity, and transformation.</p>
+    </div>
+
+    <div class="card">
+      <h3>Voice + Audio Expansion</h3>
+      <p>Ongoing development of voiceover, narration, and audio storytelling experiences.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="container">
+  <h2>This is only the beginning.</h2>
+  <p>Each project feeds into a larger system designed to create sustainability, ownership, and creative alignment.</p>
+  <a class="btn" href="index.html">Back to Home</a>
+</section>
+
+<footer class="container">
+  <p>© Vocalstrain</p>
+</footer>
+
+</body>
+</html>
